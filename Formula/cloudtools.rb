@@ -11,6 +11,10 @@ class Cloudtools < Formula
   depends_on "stern"
   depends_on "watch"
 
+  def install
+    puts "No actual installation tasks to do, this is a metapackage."
+  end
+
   test do
     system bin/"jq", "-V"
     system bin/"kops", "version"
