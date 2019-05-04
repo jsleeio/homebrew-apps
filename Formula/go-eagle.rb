@@ -31,6 +31,7 @@ class GoEagle < Formula
   end
 
   test do
-    true
+    system bin/"schroff", "--help"
+    system bin/"panelgen", "--help"
   end
 end
