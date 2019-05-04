@@ -13,6 +13,8 @@ class Cloudtools < Formula
 
   def install
     puts "No actual installation tasks to do, this is a metapackage."
+    system "touch .jsleeio.cloudtools"
+    bin.install ".jsleeio.cloudtools"
   end
 
   test do
