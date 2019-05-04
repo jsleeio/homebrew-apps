@@ -20,7 +20,7 @@ class Grepples < Formula
     (buildpath/"bin").mkpath
 
     cd "src/github.com/jsleeio/grepples" do
-      system "make"
+      system "go", "build"
       bin.install "grepples"
       prefix.install_metafiles
     end

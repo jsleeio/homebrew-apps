@@ -20,7 +20,7 @@ class Cacheexec < Formula
     (buildpath/"bin").mkpath
 
     cd "src/github.com/jsleeio/cacheexec" do
-      system "make"
+      system "go", "build"
       bin.install "cacheexec"
       prefix.install_metafiles
     end
