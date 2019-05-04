@@ -1,16 +1,12 @@
 class GoEagle < Formula
   desc "CLI tools for creating and manipulating Autodesk Eagle CAD files"
   homepage "https://github.com/jsleeio/go-eagle"
-  head "https://github.com/jsleeio/go-eagle.git",
-
-  bottle do
-    cellar :any_skip_relocation
-    sha256 "" => :mojave
-    sha256 "" => :high_sierra
-    sha256 "" => :sierra
-  end
+  url "https://github.com/jsleeio/go-eagle.git"
+  head "https://github.com/jsleeio/go-eagle.git"
+  bottle :disable, "local build only"
 
   depends_on "go" => :build
+
 
   def install
     # Avoid running `go get`
