@@ -1,6 +1,8 @@
 class Cloudtools < Formula
   desc "A collection of cloud-oriented tooling curated by @jsleeio"
   homepage "https://github.com/jsleeio"
+  url "https://github.com/jsleeio/homebrew-apps.git", :using => :git
+
   depends_on "jq"
   depends_on "kops"
   depends_on "kubernetes-cli"
