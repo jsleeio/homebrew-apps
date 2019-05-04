@@ -1,4 +1,4 @@
-class GoEagle < Formula
+class Grepples < Formula
   desc "Aggressively-parallelized grep utility for AWS S3"
   homepage "https://github.com/jsleeio/grepples"
   url "https://github.com/jsleeio/grepples.git",

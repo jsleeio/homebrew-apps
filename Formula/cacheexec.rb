@@ -1,4 +1,4 @@
-class GoEagle < Formula
+class CacheExec < Formula
   desc "Shell-oriented caching tool, good for complex shell prompt decoration"
   homepage "https://github.com/jsleeio/cacheexec"
   url "https://github.com/jsleeio/cacheexec.git",
