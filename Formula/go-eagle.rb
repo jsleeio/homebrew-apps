@@ -3,8 +3,8 @@ class GoEagle < Formula
   homepage "https://github.com/jsleeio/go-eagle"
   url "https://github.com/jsleeio/go-eagle.git",
       :using    => :git,
-      :tag      => "v0.0.1",
-      :revision => "be1da2c6199be1638195027a51888d2554fc8a84"
+      :tag      => "v0.0.2",
+      :revision => "b0d374fea620b556d7b97223dd028acf5705a20a"
   head "https://github.com/jsleeio/go-eagle.git"
   bottle :disable, "local build only"
 
