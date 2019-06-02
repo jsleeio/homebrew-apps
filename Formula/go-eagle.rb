@@ -3,8 +3,8 @@ class GoEagle < Formula
   homepage "https://github.com/jsleeio/go-eagle"
   url "https://github.com/jsleeio/go-eagle.git",
       :using    => :git,
-      :tag      => "v0.0.2",
-      :revision => "b0d374fea620b556d7b97223dd028acf5705a20a"
+      :tag      => "v0.0.3",
+      :revision => "9a829ec9fc24914ff4807ffe822af224951a5f69"
   head "https://github.com/jsleeio/go-eagle.git"
   bottle :disable, "local build only"
 
@@ -23,7 +23,7 @@ class GoEagle < Formula
     (buildpath/"bin").mkpath
 
     cd "src/github.com/jsleeio/go-eagle" do
-      system "make"
+      system "make clean binaries"
       bin.install "schroff"
       bin.install "panelgen"
       prefix.install_metafiles
